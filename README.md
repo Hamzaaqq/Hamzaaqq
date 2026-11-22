@@ -1,16 +1,20 @@
-## Hi there 👋
+# Hamza Aqqaoui
 
-<!--
-**Hamzaaqq/Hamzaaqq** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I build small PHP tools for validating input and checking data before it reaches an application.
 
-Here are some ideas to get you started:
+## Selected projects
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+| Project | What it does |
+| --- | --- |
+| [CSV Audit](https://github.com/Hamzaaqq/csv-audit) | A command-line tool that checks CSV exports for duplicate headers, inconsistent row widths, and missing required values. It supports JSON reports and runs automated tests on PHP 8.2–8.5. |
+| [PHP Mini Validator](https://github.com/Hamzaaqq/php-mini-validator) | A dependency-free input validator for PHP. It uses simple rules to check required fields, email addresses, and minimum lengths. |
+
+## Try CSV Audit
+
+From the CSV Audit repository root, run the included sample with PHP 8.2 or later:
+
+```sh
+php bin/csv-audit examples/customers.csv --required=email
+```
+
+The sample reports a missing email and a row with too few columns.
