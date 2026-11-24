@@ -1,32 +1,35 @@
 # Hamza Aqqaoui
 
-Open-source projects for data quality, input validation and practical software testing.
+Open-source PHP projects for data quality, input validation and practical software testing.
 
-## Projects
+## Featured project: OpenQA Toolkit
 
-| Project | Purpose |
-| --- | --- |
-| [OpenQA Toolkit](https://github.com/Hamzaaqq/openqa-toolkit) | Early-stage PHP CLI for HTML quality checks, HTTP status and security header review, with JSON reports and regression tests. |
-| [CSV Audit](https://github.com/Hamzaaqq/csv-audit) | Dependency-free PHP CLI for detecting malformed CSV records, duplicate headers and missing required values. Includes JSON output and automated tests. |
-| [PHP Mini Validator](https://github.com/Hamzaaqq/php-mini-validator) | Small PHP input validation library with required, email and minimum-length rules. |
+[![PHP checks](https://github.com/Hamzaaqq/openqa-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/Hamzaaqq/openqa-toolkit/actions/workflows/ci.yml)
 
-## Try CSV Audit
-
-Requires PHP 8.2 or later. From the project directory:
+[OpenQA Toolkit](https://github.com/Hamzaaqq/openqa-toolkit) is an early-stage MIT-licensed command-line tool for checking HTML quality, local anchors and HTTP security headers. It provides JSON output for automation, a sample HTML fixture and regression tests.
 
 ```sh
-php bin/csv-audit examples/customers.csv --required=email
+git clone https://github.com/Hamzaaqq/openqa-toolkit.git
+cd openqa-toolkit
+php bin/openqa html examples/sample.html --json
 php tests/run.php
 ```
 
-The sample demonstrates a missing email and a row with too few columns.
+Requires PHP 8.2+ with DOM and cURL. The sample deliberately contains three findings. The [initial CI run](https://github.com/Hamzaaqq/openqa-toolkit/actions/runs/45481651163) passed; the tool is not a complete accessibility or security audit.
 
-## Current learning interests
+## Other projects
 
-- Manual software quality assurance and reproducible bug reports
+| Project | Purpose |
+| --- | --- |
+| [CSV Audit](https://github.com/Hamzaaqq/csv-audit) | Dependency-free PHP CLI for checking CSV structure and required values, with JSON reports and automated tests. |
+| [PHP Mini Validator](https://github.com/Hamzaaqq/php-mini-validator) | Small PHP input validation library with required, email and minimum-length rules. |
+
+## Learning and development focus
+
+- Manual software QA and reproducible bug reports
 - Accessible web experiences and defensive security checks
-- Automated testing, documentation and maintainable developer tools
+- Automated tests and maintainable developer tools
 
-## Feedback and contributions
+## Contributing
 
-Bug reports, reproducible examples and suggestions are welcome through the relevant repository's issue tracker. Please avoid sharing private data or credentials in issues.
+Feedback and reproducible bug reports are welcome. See the [OpenQA contribution guide](https://github.com/Hamzaaqq/openqa-toolkit/blob/main/CONTRIBUTING.md) and [roadmap](https://github.com/Hamzaaqq/openqa-toolkit/blob/main/docs/roadmap.md). Please omit credentials and private data from issues.
