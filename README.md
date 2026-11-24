@@ -6,6 +6,7 @@ Open-source projects for data quality, input validation and practical software t
 
 | Project | Purpose |
 | --- | --- |
+| [OpenQA Toolkit](https://github.com/Hamzaaqq/openqa-toolkit) | Early-stage PHP CLI for HTML quality checks, HTTP status and security header review, with JSON reports and regression tests. |
 | [CSV Audit](https://github.com/Hamzaaqq/csv-audit) | Dependency-free PHP CLI for detecting malformed CSV records, duplicate headers and missing required values. Includes JSON output and automated tests. |
 | [PHP Mini Validator](https://github.com/Hamzaaqq/php-mini-validator) | Small PHP input validation library with required, email and minimum-length rules. |
 
